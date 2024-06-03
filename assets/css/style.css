@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+nav{
+    height: 84px;
+    padding: 0 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 170px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav button{
+    height: 45px;
+    width: 145px;
+    background-color: #27AE60;
+    border: none;
+    border-radius: 5px;
+    color:white ;
+}
+
+.hero{
+    text-align: center;
+    position: relative;
+    height: calc(100vh - 84px) ;
+    color: white;
+}
+.hero .info{
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero h1{
+    width: 520px;
+    font-size: 60px;
+    line-height: 100px;
+}
+
+.featured{
+    background-color:#F7F9FC ;
+    padding: 100px 0;
+}
+.featured h1 , .recent h1 ,.explore h1{
+    width: max-content;
+    margin: 0 auto;
+    font-size: 40px;
+    color: #2D3954;
+}
+.container{
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.featured .container .card{
+    width: 190px;
+    height: 160px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.featured .container .card img{
+    width: 70px;
+}
+.recent{
+    padding: 100px 0; 
+}
+.recent .container .card{
+    width: 320px;
+    height: 320px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray;
+}
+.recent .container .card img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.recent .card h4{
+    margin: 20px;
+}
+.recent .card .end{
+    border-top: solid 1px gray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.recent .card .price{
+    border-radius: 25px;
+    padding: 5px;
+    background-color: #27AE60;
+    color: white;
+}
+.explore .card{
+    width:330px ;
+    height:230px ;
+    border-radius: 5px;
+    position: relative;
+}
+.explore .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.explore .card h4{
+    width: 100% ;
+    height: 100% ;
+    background-color: rgba(127, 127, 127, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.explore .container{
+    gap: 20px;
+}
+footer{
+    height: 65px;
+    background-color: #1D2636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-top: 80px;
+}
